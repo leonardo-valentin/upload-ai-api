@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
-    "start": "tsx watch src/server.ts",
     "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
