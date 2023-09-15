@@ -20,6 +20,7 @@ const port = Number(process.env.PORT);
 
 app
   .listen({
+    host: "0.0.0.0",
     port: port ?? 3333,
   })
   .then(() => {
