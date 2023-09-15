@@ -8,7 +8,7 @@ import { generateAICompletionRoute } from "./routes/generate-ai-completion";
 const app = fastify();
 
 app.register(fastifyCors, {
-  origin: "*",
+  origin: true,
 });
 
 app.register(getAllPromptsRoute);
@@ -16,9 +16,11 @@ app.register(uploadVideoRoute);
 app.register(createTranscriptionRoute);
 app.register(generateAICompletionRoute);
 
+const port = Number(process.env.PORT);
+
 app
   .listen({
-    port: 3333,
+    port: port ?? 3333,
   })
   .then(() => {
     console.log("HTTP SERVER RUNNING");
