@@ -26,8 +26,7 @@ git clone https://github.com/leonardo-valentin/upload-ai-api.git
 2. Navegue até o diretório do projeto:
 cd seu-repositorio
 3. Instale as dependências:
-npm install
-(ou pnpm, yarn, etc)
+pnpm install
 4. Configure o banco de dados de acordo com as instruções em [Configuração](#configuração).
 5. Inicie o servidor:
 pnpm run dev
