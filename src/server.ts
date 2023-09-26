@@ -11,6 +11,8 @@ app.register(fastifyCors, {
   origin: true,
 });
 
+console.log("working");
+
 app.register(getAllPromptsRoute);
 app.register(uploadVideoRoute);
 app.register(createTranscriptionRoute);
