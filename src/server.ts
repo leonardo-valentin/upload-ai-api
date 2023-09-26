@@ -19,7 +19,7 @@ app.register(generateAICompletionRoute);
 app
   .listen({
     host: "0.0.0.0",
-    port: 3333,
+    port: Number(process.env.PORT),
   })
   .then(() => {
     console.log("running");
